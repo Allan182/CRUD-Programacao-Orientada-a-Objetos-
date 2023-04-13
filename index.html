@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Allan - Contatos </title>
+
+</head>
+
+
+<body>
+
+    <h1> Lista de Contatos </h1>
+
+    <select id="selectOpcao">
+        <option value="Selecione-Uma-Opção"> Selecione Uma Opção </option>
+        <option value="Cadastrar-Contato"> Cadastrar Novo Contato na Lista </option>
+        <option value="Excluir-Contato"> Excluir um Contato da Lista </option>
+        <option value="Alterar-Endereco"> Alterar Endereço de um Contato </option>
+        <option value="Alterar-Telefone"> Alterar Telefone de um Contato </option>
+        <option value="Exibir-Contato"> Exibir Informações de um Contato </option>
+        <option value="Filtrar-Endereço"> Filtrar pelo Endereço </option>
+        <option value="Listar-Tabela"> Listar Tabela</option>
+    </select>
+
+    <p> Nome do Contato: <input type="text" id="inNomeContato" placeholder="Insira o Nome"> </p>
+    <p> Endereço do Contato: <input type="text" id="inEnderecoContato" placeholder="Insira o Endereço"> </p>
+    <p> Telefone do Contato: <input type="text" id="inTelefoneContato" placeholder="Insira o Telefone (Sem DDD)"> </p>
+    <p> CPF do Contato: <input type="text" id="inCpfContato" placeholder="Insira o CPF (Sem Pontos)"> </p>
+    <p> Data de Nascimento do Contato: <input type="text" id="inDataNascContato" placeholder="Ex: 23/08/2002"> </p>
+    <p> Filtre pelo Endereço: <input type="text" id="inFiltroEndereco" placeholder="Ex: Itapuã"> </p>
+
+
+
+    <p> <input type="button" id="btOk" value="Enviar"> </p>
+
+    <pre id="outSaida"> </pre>
+
+    <section class="table">
+
+    </section>
+
+    <script src="scriptInterface.js" type="module"> </script>
+
+
+</body>
+
+</html>
